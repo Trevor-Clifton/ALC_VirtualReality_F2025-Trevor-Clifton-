@@ -3,38 +3,50 @@
     <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
   </head>
   <body>
-    <a-scene fog="type: exponential; density: 0.1; near: 0.00001; color: #AAA">
+    <a-scene fog="color: #AAA; density: 0.1; type: exponential" keyboard-shortcuts="" screenshot="" xr-mode-ui="" device-orientation-permission-ui="">
       <a-assets>
         <img id="grass2" src="images/grass2.png">
         <img id="bark" src="images/bark.png">
       </a-assets>
-      <a-plane position="0 0 0" rotation="-90 0 0" scale="100 100 0" src="#grass2" repeat="80 80"></a-plane>
+      <a-plane rotation="-90 0 0" scale="100 100 0" src="#grass2" repeat="80 80"></a-plane>
       <a-sky color="#000000"></a-sky>
 
       <a-cone position="0 1 0" height=".75" radius-bottom="0.125" radius-top="0.025" color="#0E7300"></a-cone>
-      <a-sphere position="0 .5 0" radius=".5" color="#FF8800"></a-sphere>
+      <a-sphere position="0 0.5 0" radius=".5" color="#FF8800"></a-sphere>
 
       <a-cone position="1 1 0" height=".75" radius-bottom="0.125" radius-top="0.025" color="#0E7300"></a-cone>
-      <a-sphere position="1 .5 0" radius=".5" color="#FF8800"></a-sphere>
+      <a-sphere position="1 0.5 0" radius=".5" color="#FF8800"></a-sphere>
 
-      <a-cone position=".5 1 -.85" height=".75" radius-bottom="0.125" radius-top="0.025" color="#0E7300"></a-cone>
-      <a-sphere position=".5 .5 -.85" radius=".5" color="#FF8800"></a-sphere>
+      <a-cone position="0.5 1 -0.85" height=".75" radius-bottom="0.125" radius-top="0.025" color="#0E7300"></a-cone>
+      <a-sphere position="0.5 0.5 -0.85" radius=".5" color="#FF8800"></a-sphere>
       <a-entity position="-5 0 0">
-        <a-cylinder position="0 0 0" radius="0.25" height="4" src="#bark" repeat="1 5"></a-cylinder>
+        <a-cylinder radius="0.25" height="4" src="#bark" repeat="1 5"></a-cylinder>
+        <a-cone position="0 4 0" radius="0.25" height="4" color="#077000"></a-cone>
+      </a-entity><a-entity position="-1.28325 0 4.245">
+        <a-cylinder radius="0.25" height="4" src="#bark" repeat="1 5"></a-cylinder>
+        <a-cone position="0 4 0" radius="0.25" height="4" color="#077000"></a-cone>
+      </a-entity><a-entity position="4.5 0 4.5">
+        <a-cylinder radius="0.25" height="4" src="#bark" repeat="1 5"></a-cylinder>
+        <a-cone position="0 4 0" radius="0.25" height="4" color="#077000"></a-cone>
+      </a-entity><a-entity position="4.5 0 -4.5">
+        <a-cylinder radius="0.25" height="4" src="#bark" repeat="1 5"></a-cylinder>
+        <a-cone position="0 4 0" radius="0.25" height="4" color="#077000"></a-cone>
+      </a-entity><a-entity position="-2.108 0 -7.05815">
+        <a-cylinder radius="0.25" height="4" src="#bark" repeat="1 5"></a-cylinder>
         <a-cone position="0 4 0" radius="0.25" height="4" color="#077000"></a-cone>
       </a-entity>
       <a-entity position="5 0 0">
-        <a-cylinder position="0 0 0" radius="0.25" height="4" src="#bark" repeat="1 5"></a-cylinder>
+        <a-cylinder radius="0.25" height="4" src="#bark" repeat="1 5"></a-cylinder>
         <a-cone position="0 4 0" radius="0.25" height="4" color="#077000"></a-cone>
       </a-entity>
 
       <a-entity position="-17 0 0">
-        <a-cylinder position="0 0 0" radius="0.25" height="4" src="#bark" repeat="1 5"></a-cylinder>
+        <a-cylinder radius="0.25" height="4" src="#bark" repeat="1 5"></a-cylinder>
         <a-cone position="0 4 0" radius="0.25" height="4" color="#077000"></a-cone>
       </a-entity>
 
       <a-entity position="15 0 0">
-        <a-cylinder position="0 0 0" radius="0.25" height="4" src="#bark" repeat="1 5"></a-cylinder>
+        <a-cylinder radius="0.25" height="4" src="#bark" repeat="1 5"></a-cylinder>
         <a-cone position="0 4 0" radius="0.25" height="4" color="#077000"></a-cone>
       </a-entity>
     </a-scene>
