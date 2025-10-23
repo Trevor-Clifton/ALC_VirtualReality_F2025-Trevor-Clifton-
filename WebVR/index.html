@@ -8,6 +8,10 @@
         <img id="grass2" src="images/grass2.png">
         <img id="bark" src="images/bark.png">
       </a-assets>
+      <a-entity camera look-controls position="0 1.6 0">
+        <a-cursor color="cyan"></a-cursor>
+      </a-entity>
+      <a-box position="-1 1.6 -5" animation="property: rotation; to: 360; dur: 2000; easing: linear; loop: true" color="tomato"></a-box>
       <a-plane rotation="-90 0 0" scale="100 100 0" src="#grass2" repeat="80 80"></a-plane>
       <a-sky color="#000000"></a-sky>
 
