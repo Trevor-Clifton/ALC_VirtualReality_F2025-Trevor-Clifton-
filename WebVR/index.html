@@ -3,17 +3,18 @@
     <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
   </head>
   <body>
-    <a-scene fog="color: #AAA; density: 0.1; type: exponential" keyboard-shortcuts="" screenshot="" xr-mode-ui="" device-orientation-permission-ui="">
+    <a-scene keyboard-shortcuts="" screenshot="" xr-mode-ui="" device-orientation-permission-ui="">
       <a-assets>
         <img id="grass2" src="images/grass2.png">
         <img id="bark" src="images/bark.png">
+        <img id="city" src="images/city.jpg">
       </a-assets>
       <a-entity camera look-controls position="0 1.6 0">
         <a-cursor color="cyan"></a-cursor>
       </a-entity>
-      <a-box position="-1 1.6 -5" animation="property: rotation; to: 360; dur: 2000; easing: linear; loop: true" color="tomato"></a-box>
+      <a-sky src="#city"></a-sky>
+      <!-- <a-box position="-1 1.6 -5" animation="property: rotation; to: 360; dur: 2000; easing: linear; loop: true" color="tomato"></a-box>
       <a-plane rotation="-90 0 0" scale="100 100 0" src="#grass2" repeat="80 80"></a-plane>
-      <a-sky color="#000000"></a-sky>
 
       <a-cone position="0 1 0" height=".75" radius-bottom="0.125" radius-top="0.025" color="#0E7300"></a-cone>
       <a-sphere position="0 0.5 0" radius=".5" color="#FF8800"></a-sphere>
@@ -53,6 +54,7 @@
         <a-cylinder radius="0.25" height="4" src="#bark" repeat="1 5"></a-cylinder>
         <a-cone position="0 4 0" radius="0.25" height="4" color="#077000"></a-cone>
       </a-entity>
+    -->
     </a-scene>
   </body>
 </html>
