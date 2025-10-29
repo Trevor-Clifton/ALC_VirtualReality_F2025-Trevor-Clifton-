@@ -1,6 +1,6 @@
 <html>
   <head>
-    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+    <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
   </head>
   <body>
     <a-scene keyboard-shortcuts="" screenshot="" xr-mode-ui="" device-orientation-permission-ui="">
@@ -13,6 +13,13 @@
         <a-cursor color="cyan"></a-cursor>
       </a-entity>
       <a-sky src="#city"></a-sky>
+      <a-box color="green" position="5 1 -4">
+        <a-animation attribute="color" from="green" to="yellow" begin="mouseenter"></a-animation>
+        <a-animation attribute="color" from="yellow" to="green" begin="mouseleave"></a-animation>
+      </a-box>
+      <a-text value="This is a WebVR demo" position="0 1.6 -3" align="center" geometry="primitive:plane; width:3">
+        <a-animation attribute="position" from="0 1.6 -3" to="0 2 -3" begin="click">
+      </a-text>
       <!-- <a-box position="-1 1.6 -5" animation="property: rotation; to: 360; dur: 2000; easing: linear; loop: true" color="tomato"></a-box>
       <a-plane rotation="-90 0 0" scale="100 100 0" src="#grass2" repeat="80 80"></a-plane>
 
